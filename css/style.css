@@ -29,7 +29,7 @@ body {
     font-size: 16px;
 }
 
-.auto-button {
+.menu-button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -42,6 +42,8 @@ body {
     cursor: pointer;
     border: none;
     outline: none;
+    width: 185px;
+    height: 68px;
 }
 
 #nav-menu {
@@ -59,4 +61,55 @@ body {
 
 a {
     color: #020e35;
+}
+
+.first-page {
+    display: flex;
+    padding: 300px 150px 200px 150px;
+    height: 1008px;
+    justify-content: space-between;
+}
+
+.ice-coffee {
+    display: flex;
+    flex-direction: column;
+}
+
+.first-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 457px;
+    width: 548px;
+}
+
+.surline {
+    background-color: #ff5678;
+    color: white;
+}
+
+h1 {
+    font-size: 76px;
+    font-weight: 900;
+    line-height: 110px;
+    color: #2b2b2b;
+    margin: 0;
+    letter-spacing: 0%;
+}
+
+.main-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #020e35;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: 700;
+    padding: 24px 40px;
+    font-size: inherit;
+    cursor: pointer;
+    width: 197px;
+    height: 71px;
+    box-shadow: 0px 10px 40px 5px rgba(0,0,0,0.25)
 }
