@@ -1,3 +1,62 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Merriweather';
+}
+
 body {
-    background-image: url('../img/view_site_html.jpg');
+    padding: 0;
+    margin: 0;
+}
+
+.TopBar {
+    height: 84px;
+    padding: 8px 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 55px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    width: 702px;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+.auto-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 40px;
+    background-color: #020e35;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: inherit;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+#nav-menu {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding-bottom: 8px;
+}
+
+.underline {
+    text-decoration: underline 4px;
+    text-decoration-color: #ff5678;
+    text-underline-offset: 8px;
+}
+
+a {
+    color: #020e35;
 }
