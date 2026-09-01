@@ -111,5 +111,81 @@ h1 {
     cursor: pointer;
     width: 197px;
     height: 71px;
-    box-shadow: 0px 10px 40px 5px rgba(0,0,0,0.25)
+    box-shadow: 0px 10px 40px 5px rgba(0, 0, 0, 0.25)
+}
+
+.second-page {
+    display: flex;
+    height: 708px;
+    padding: 100px 150px 100px 150px;
+    justify-content: space-between;
+}
+
+.barista {
+    display: flex;
+    flex-direction: column;
+}
+
+.second-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 517px;
+    height: 435px;
+}
+
+.second-title .main-button {
+    height: 71px;
+    width: 185px;
+}
+
+p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0%;
+    color: #020e35;
+    margin: 0;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 62px;
+    color: #020e35;
+    margin: 0;
+}
+
+.mid-line {
+    background: linear-gradient(to top, #ff5678 45%, transparent 0%)
+}
+
+.button-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 71px;
+    width: 460px;
+}
+
+.play-button {
+    background-color: #ff5678;
+    border: none;
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;
+    border: none;
+}
+
+.play-button::before {
+    display: block;
+    width: 48px;
+    height: 42px;
+    content: url("./img/Illustration.png");
+    background-size: no-repeat;
 }
