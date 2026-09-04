@@ -158,6 +158,10 @@ h2 {
 }
 
 .mid-line {
+    white-space: nowrap;
+    padding-right: 11px;
+    padding-left: 0px;
+    box-decoration-break: clone;
     background: linear-gradient(to top, #ff5678 45%, transparent 0%)
 }
 
@@ -199,6 +203,7 @@ h3 {
     color: #020e35;
     margin: 0%;
     padding-bottom: 120px;
+    letter-spacing: 0%;
 }
 
 .third-title {
@@ -260,6 +265,36 @@ h4 {
     position: relative;
     height: 870px;
     justify-content: space-between;
+    align-items: center;
     padding: 100px 150px 100px 150px;
     z-index: 0;
+}
+
+.fourth-title {
+    display: flex;
+    flex-direction: column;
+    width: 664px;
+    height: 503px;
+    gap: 60px;
+}
+
+.fourth-title h3 {
+    line-height: 72px;
+    padding-bottom: 0;
+}
+
+.fourth-title p {
+    line-height: 32px;
+    padding-right: 183px;
+}
+
+.fourth-title button {
+    width: 185px;
+    height: 71px;
+}
+
+.clearing-error {
+    border: none;
+    background: none;
+    cursor: pointer;
 }
