@@ -7,6 +7,7 @@
 body {
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
 }
 
 .TopBar {
@@ -168,24 +169,97 @@ h2 {
     width: 460px;
 }
 
-.play-button {
-    background-color: #ff5678;
-    border: none;
-    width: 68px;
-    height: 68px;
-    border-radius: 50%;
+.third-page {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    padding: 0;
-    border: none;
+    position: relative;
+    z-index: 1;
+    height: 792px;
+    justify-content: space-between;
+    padding: 100px 150px 100px 150px;
 }
 
-.play-button::before {
-    display: block;
-    width: 48px;
-    height: 42px;
-    content: url("./img/Illustration.png");
-    background-size: no-repeat;
+.third-page::before {
+    content: "";
+    position: absolute;
+    width: 780px;
+    height: 670px;
+    border-radius: 1000px;
+    background-color: #ffeef6;
+    left: -200px;
+    top: 187px;
+    z-index: -1;
+    pointer-events: none;
+    gap: 4px;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 62px;
+    color: #020e35;
+    margin: 0%;
+    padding-bottom: 120px;
+}
+
+.third-title {
+    display: flex;
+    width: 545px;
+    height: 592px;
+    flex-direction: column;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+    color: #020e35;
+    margin: 0%;
+    padding: 8px 0 20px 0;
+}
+
+.service-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 544px;
+    height: 110px;
+    margin-bottom: 40px;
+}
+
+
+.service-block span {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 40px 38px 0;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 72px;
+    width: 83px;
+    height: 72px;
+    color: transparent;
+    -webkit-text-stroke: 1px #020e35;
+    border: 1px;
+}
+
+.text-service {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.service-content {
+    display: flex;
+    width: 543px;
+    height: 410px;
+    flex-direction: column;
+    margin: 91px 0 91px 0;
+}
+
+.fourth-page {
+    display: flex;
+    position: relative;
+    height: 870px;
+    justify-content: space-between;
+    padding: 100px 150px 100px 150px;
+    z-index: 0;
 }
