@@ -1,13 +1,14 @@
 * {
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'Merriweather';
+    font-family: 'Merriweather', serif;
 }
 
 body {
     padding: 0;
     margin: 0;
     overflow-x: hidden;
+    color: #020e35;
 }
 
 .TopBar {
@@ -30,28 +31,15 @@ body {
     font-size: 16px;
 }
 
-.menu-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 24px 40px;
-    background-color: #020e35;
-    text-decoration: none;
-    color: white;
-    font-weight: 700;
-    font-size: inherit;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    width: 185px;
-    height: 68px;
-}
-
 #nav-menu {
     display: flex;
     justify-content: center;
     gap: 60px;
     padding-bottom: 8px;
+}
+
+a:visited {
+    color: #020e35;
 }
 
 .underline {
@@ -60,20 +48,11 @@ body {
     text-underline-offset: 8px;
 }
 
-a {
-    color: #020e35;
-}
-
 .first-page {
     display: flex;
     padding: 300px 150px 200px 150px;
-    height: 1008px;
+    min-height: 1008px;
     justify-content: space-between;
-}
-
-.ice-coffee {
-    display: flex;
-    flex-direction: column;
 }
 
 .first-title {
@@ -95,36 +74,14 @@ h1 {
     line-height: 110px;
     color: #2b2b2b;
     margin: 0;
-    letter-spacing: 0%;
-}
-
-.main-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #020e35;
-    border: none;
-    outline: none;
-    color: white;
-    font-weight: 700;
-    padding: 24px 40px;
-    font-size: inherit;
-    cursor: pointer;
-    width: 197px;
-    height: 71px;
-    box-shadow: 0px 10px 40px 5px rgba(0, 0, 0, 0.25)
+    letter-spacing: 0;
 }
 
 .second-page {
     display: flex;
-    height: 708px;
+    min-height: 708px;
     padding: 100px 150px 100px 150px;
     justify-content: space-between;
-}
-
-.barista {
-    display: flex;
-    flex-direction: column;
 }
 
 .second-title {
@@ -144,8 +101,6 @@ p {
     font-weight: 400;
     font-size: 18px;
     line-height: 23px;
-    letter-spacing: 0%;
-    color: #020e35;
     margin: 0;
 }
 
@@ -153,7 +108,6 @@ h2 {
     font-weight: 700;
     font-size: 54px;
     line-height: 62px;
-    color: #020e35;
     margin: 0;
 }
 
@@ -177,7 +131,7 @@ h2 {
     display: flex;
     position: relative;
     z-index: 1;
-    height: 792px;
+    min-height: 792px;
     justify-content: space-between;
     padding: 100px 150px 100px 150px;
 }
@@ -193,17 +147,14 @@ h2 {
     top: 187px;
     z-index: -1;
     pointer-events: none;
-    gap: 4px;
 }
 
 h3 {
     font-weight: 700;
     font-size: 54px;
     line-height: 62px;
-    color: #020e35;
-    margin: 0%;
+    margin: 0;
     padding-bottom: 120px;
-    letter-spacing: 0%;
 }
 
 .third-title {
@@ -217,7 +168,6 @@ h4 {
     font-weight: 700;
     font-size: 28px;
     line-height: 36px;
-    color: #020e35;
     margin: 0%;
     padding: 8px 0 20px 0;
 }
@@ -234,7 +184,6 @@ h4 {
 
 .service-block span {
     display: flex;
-    justify-content: space-between;
     margin: 0 40px 38px 0;
     font-weight: 400;
     font-size: 64px;
@@ -243,7 +192,6 @@ h4 {
     height: 72px;
     color: transparent;
     -webkit-text-stroke: 1px #020e35;
-    border: 1px;
 }
 
 .text-service {
@@ -263,7 +211,7 @@ h4 {
 .fourth-page {
     display: flex;
     position: relative;
-    height: 870px;
+    min-height: 870px;
     justify-content: space-between;
     align-items: center;
     padding: 100px 150px 100px 150px;
@@ -297,4 +245,31 @@ h4 {
     border: none;
     background: none;
     cursor: pointer;
+}
+
+.menu-button,
+.main-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #020e35;
+    color: white;
+    font-weight: 700;
+    font-size: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.menu-button {
+    padding: 24px 40px;
+    width: 185px;
+    height: 68px;
+}
+
+.main-button {
+    padding: 24px 40px;
+    width: 197px;
+    height: 71px;
+    box-shadow: 0px 10px 40px 5px rgba(0, 0, 0, 0.25);
 }
