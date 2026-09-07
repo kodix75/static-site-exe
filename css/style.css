@@ -2,11 +2,11 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Merriweather', serif;
+    padding: 0;
+    margin: 0;
 }
 
 body {
-    padding: 0;
-    margin: 0;
     overflow-x: hidden;
     color: #020e35;
 }
@@ -17,6 +17,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    box-shadow: 0 8px 20px 5px rgba(0, 0, 0, 0.08);
 }
 
 .logo {
@@ -73,7 +74,6 @@ h1 {
     font-weight: 900;
     line-height: 110px;
     color: #2b2b2b;
-    margin: 0;
     letter-spacing: 0;
 }
 
@@ -101,14 +101,12 @@ p {
     font-weight: 400;
     font-size: 18px;
     line-height: 23px;
-    margin: 0;
 }
 
 h2 {
     font-weight: 700;
     font-size: 54px;
     line-height: 62px;
-    margin: 0;
 }
 
 .mid-line {
@@ -153,7 +151,6 @@ h3 {
     font-weight: 700;
     font-size: 54px;
     line-height: 62px;
-    margin: 0;
     padding-bottom: 120px;
 }
 
@@ -168,7 +165,6 @@ h4 {
     font-weight: 700;
     font-size: 28px;
     line-height: 36px;
-    margin: 0%;
     padding: 8px 0 20px 0;
 }
 
@@ -226,7 +222,8 @@ h4 {
     gap: 60px;
 }
 
-.fourth-title h3 {
+.fourth-title h3,
+.fifth-page h3 {
     line-height: 72px;
     padding-bottom: 0;
 }
@@ -272,4 +269,78 @@ h4 {
     width: 197px;
     height: 71px;
     box-shadow: 0px 10px 40px 5px rgba(0, 0, 0, 0.25);
+}
+
+.fifth-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 1485px;
+    padding: 100px 150px 100px 150px;
+    gap: 104px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 519px);
+    grid-template-rows: repeat(2, 519px);
+    row-gap: 60px;
+    column-gap: 32px;
+    min-height: 1109px;
+    min-width: 1620px;
+}
+
+.container article,
+.container figure {
+    display: flex;
+    gap: 60px;
+}
+
+.container article {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    padding: 71px;
+    z-index: 1;
+}
+
+.container article::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #ffffff;
+    border: 1px solid #b8b8b8;
+    border-radius: 50px;
+    z-index: -1;
+}
+
+.container figure {
+    width: 200px;
+    height: 200px;
+    background-color: #ffeef6;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+article div {
+    place-items: center;
+}
+
+.owner {
+    position: relative;
+    border-color: transparent;
+    z-index: 2;
+}
+
+.owner::before {
+    transform: scale(1.038535645);
+    box-shadow: 0 15px 40px 5px rgba(0, 0, 0, 0.15);
+}
+
+.fifth-page h4 {
+    padding: 0 0 24px 0;
+}
+
+.fifth-page .mid-line {
+    padding: 0 4px 0 8px;
 }
