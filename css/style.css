@@ -65,8 +65,11 @@ a:visited {
 }
 
 .surline {
+    display: inline-block;
     background-color: #ff5678;
     color: white;
+    line-height: 0.9;
+    padding: 5px 0 0 0;
 }
 
 h1 {
@@ -150,8 +153,7 @@ h2 {
 h3 {
     font-weight: 700;
     font-size: 54px;
-    line-height: 62px;
-    padding-bottom: 120px;
+    line-height: 72px;
 }
 
 .third-title {
@@ -161,11 +163,18 @@ h3 {
     flex-direction: column;
 }
 
+.third-title h3 {
+    padding-bottom: 120px;
+}
+
+.third-page h4 {
+    padding: 8px 0 20px 0;
+}
+
 h4 {
     font-weight: 700;
     font-size: 28px;
     line-height: 36px;
-    padding: 8px 0 20px 0;
 }
 
 .service-block {
@@ -222,13 +231,6 @@ h4 {
     gap: 60px;
 }
 
-.fourth-title h3,
-.fifth-page h3,
-.sixth-page h3 {
-    line-height: 72px;
-    padding-bottom: 0;
-}
-
 .fourth-title p {
     line-height: 32px;
     padding-right: 183px;
@@ -243,6 +245,7 @@ h4 {
     border: none;
     background: none;
     cursor: pointer;
+    padding-left: 53px;
 }
 
 .menu-button,
@@ -355,10 +358,13 @@ article div {
     flex-direction: column;
     align-items: center;
 }
+
 .sixth-page .mid-line {
     padding: 0 8px 0 4px;
 }
-.sixth-page h4 {
+
+.sixth-page h4,
+.seventh-page h4 {
     font-size: 24px;
     padding: 0;
 }
@@ -423,7 +429,103 @@ article div {
     grid-column: 3 / 4;
     grid-row: 1 / 2;
 }
+
 .sixth-page button {
     width: 203px;
     height: 71px;
 }
+
+.seventh-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 1280px;
+    padding: 100px 150px;
+    gap: 100px;
+}
+
+.container-review {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    width: 2236px;
+    height: 672px;
+}
+
+.container-review figure {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    background-color: #ffeef6;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.container-review article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    background-color: #ffffff;
+    border: 1px solid #949494;
+    border-radius: 150px;
+}
+
+.main-card {
+    width: 460px;
+    height: 672px;
+    justify-content: center;
+    padding: 60px 0 60px 0;
+}
+
+.container-review article:not(.main-card) {
+    width: 412px;
+    height: 555px;
+    padding: 60px 40px;
+}
+
+.container-review div {
+    display: flex;
+    flex-direction: column;
+    width: 253px;
+    height: 340px;
+    gap: 24px;
+    text-align: center;
+}
+
+#main-comment {
+    width: 380px;
+    height: 317px;
+}
+
+.seventh-page span {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+#arrow-nav {
+    display: flex;
+    width: 1620px;
+    height: 80px;
+    justify-content: space-between;
+    flex-direction: row;
+    position: relative;
+    z-index: 100;
+}
+
+#arrow-nav button {
+    display: block;
+    background-color: #2b2b2b;
+    border: none;
+    width: 80px;
+    height: 100%;
+    border-radius: 100px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: -1;
+}
+
+
+
