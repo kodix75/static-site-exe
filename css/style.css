@@ -154,6 +154,7 @@ h3 {
     font-weight: 700;
     font-size: 54px;
     line-height: 72px;
+    letter-spacing: 0;
 }
 
 .third-title {
@@ -593,4 +594,33 @@ textarea {
 
 textarea {
     height: 200px;
+}
+
+.ninth-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 870px;
+    padding: 100px 150px;
+}
+
+.newsletters-block {
+    display: flex;
+    flex-direction: column;
+    width: 656px;
+    height: 621px;
+    gap: 100px;
+}
+
+.ninth-page .mid-line {
+    display: inline-block;
+    padding: 3px 5px 0 0;
+}
+
+.newsletters-block h3 {
+    padding-right: 80px;
+}
+.eight-page .main-button,
+.ninth-page .main-button {
+    width: 205px;
 }
