@@ -38,6 +38,8 @@ This repository documents my journey learning HTML and CSS fundamentals by build
 
 👉 **[Open the site](https://raw.githack.com/kodix75/static-site-exe/main/index.html)**
 
+:warning:  ->  _**Render recommendation**_ = ` 1920 : 1080 `
+
 ---
 
 ## 📂 Project structure
