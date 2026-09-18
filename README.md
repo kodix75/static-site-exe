@@ -47,5 +47,5 @@ static-site-exe/
 ├── css/
 │   └── style.css
 ├── logo/
-└── assets/
+└── img/ 
 ```
