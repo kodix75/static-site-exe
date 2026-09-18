@@ -14,33 +14,31 @@
 </head>
 
 <body>
-    <header>
-        <nav class="TopBar">
-            <img class="logo" src="./img/Logo.svg" alt="Zebb logo">
-            <div class="menu">
-                <div id="nav-menu">
-                    <a href="#" class="underline">HOME</a>
-                    <a href="#">ABOUT</a>
-                    <a href="#">SERVICES</a>
-                    <a href="#">OUR WORK</a>
-                </div>
-                <button type=button class="menu-button">CONTACT US</button>
+    <nav>
+        <img class="logo" src="./img/Logo.svg" alt="Zebb logo">
+        <div class="menu">
+            <div id="nav-menu">
+                <a href="#" class="underline">HOME</a>
+                <a href="#">ABOUT</a>
+                <a href="#">SERVICES</a>
+                <a href="#">OUR WORK</a>
             </div>
-        </nav>
-    </header>
+            <button type=button class="menu-button">CONTACT US</button>
+        </div>
+    </nav>
     <main>
-        <section class="first-page">
-            <div class="first-title">
+        <header>
+            <div class="first-title flex-col">
                 <article>
                     <h1>We help to Create <span class="surline">Brands</span> With Coffee</h1>
                 </article>
                 <button class="main-button">See our work</button>
             </div>
             <img class="ice-coffee" src="./img/Illustration.png" alt="Ice coffe in a glass">
-        </section>
-        <section class="second-page">
-            <img calss="barista" src="./img/Illustration (2).png" alt="coffee barista">
-            <article class="second-title">
+        </header>
+        <section class="second-page page-section">
+            <img src="./img/Illustration (2).png" alt="coffee barista">
+            <article class="second-title flex-col">
                 <div>
                     <h2>Powered by <span class="mid-line">talented people</span></h2>
                     <p>But I must explain to you how all thismistaken idea of denouncing pleasure and praising pain was
@@ -55,8 +53,8 @@
                 </div>
             </article>
         </section>
-        <section class="third-page">
-            <article class="third-title">
+        <section class="third-page page-section">
+            <article class="third-title flex-col">
                 <h3><span class="mid-line">Things We Enjoy</span></h3>
                 <div>
                     <article class="service-block">
@@ -112,8 +110,8 @@
                 </article>
             </div>
         </section>
-        <section class="fourth-page">
-            <article class="fourth-title">
+        <section class="fourth-page page-section">
+            <article class="fourth-title flex-col">
                 <h3>We craft experiences for business to help reach <span class="mid-line">our customers</span></h3>
                 <p>But I must explain to you how all thismistaken idea of denouncing pleasure and praising pain was born
                     and I will give you a complete account of the system.</p>
@@ -135,7 +133,7 @@
                     <figure></figure>
                     <div>
                         <h4>Marck Ali</h4>
-                        <p>Owner Creative Director</p><br>
+                        <p>Owner Creative Director</p>
                         <p>See Details</p>
                     </div>
                 </article>
@@ -169,7 +167,7 @@
                 </article>
             </div>
         </section>
-        <section class="sixth-page">
+        <section class="sixth-page page-section">
             <h3>Some of Our <span class="mid-line">Previous work</span></h3>
             <article class="filtres">
                 <h4><span class="surline">ALL</span></h4>
@@ -187,7 +185,7 @@
             </div>
             <button class="main-button">See More</button>
         </section>
-        <section class="seventh-page">
+        <section class="seventh-page page-section">
             <article class="seventh-title">
                 <h3>Testimonial</h3><br>
                 <h4>Over 18,000 happy clients.</h4>
@@ -252,9 +250,9 @@
                 <button><img src="./img/Right.svg" alt="arrow right button"></button>
             </div>
         </section>
-        <section class="eight-page">
+        <section class="eight-page page-section">
             <img src="./img/Illustration.svg" alt="rounded shape rose">
-            <article class="contact-us-block">
+            <article class="contact-us-block flex-col">
                 <h3>Need Help Making Coffee? <span class="mid-line">Contact Us</span></h3>
                 <form action="" method="post">
                     <!--Name field-->
@@ -276,25 +274,26 @@
                 </form>
             </article>
         </section>
-        <section class="ninth-page">
-            <article class="newsletters-block">
+        <section class="ninth-page page-section">
+            <article class="newsletters-block flex-col">
                 <h3>Join Our Newsletters & get <span class="mid-line"> Coffee Formula!</span></h3>
                 <form action="" method="post"> <!--Name field-->
                     <div>
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="fullname" required>
+                        <label for="contact-name">Name</label>
+                        <input type="text" id="contact-name" name="fullname" required>
                     </div>
                     <!--Email field-->
                     <div>
-                        <label for="mail">Email</label>
-                        <input type="email" id="mail" name="mail-adresse" required>
+                        <label for="contact-email">Email</label>
+                        <input type="email" id="contact-email" name="mail-adresse" required>
                     </div>
                     <button type="submit" class="main-button">Send</button>
                 </form>
             </article>
             <img src="./img/Illustration.svg" alt="rounded shape rose">
         </section>
-        <footer>
+    </main>
+     <footer>
             <article>
                 <div class="info-zebb">
                     <img src="./img/Logo (2).svg" alt="logo Zebb">
@@ -306,20 +305,20 @@
                         <img src="./img/Icon color-4.svg" alt="twitter">
                     </div>
                     <div class="info-social">
-                        <p>Address</p>
-                        <a>+ 123 654 987</a>
+                        <a>Address</a>
+                        <a href="tel:+123654987">+ 123 654 987</a>
                         <p>877 The Bronx, NY</p>
                         <p>14568 USA</p>
                     </div>
                 </div>
                 <div class="other-info">
-                    <a>Services</a>
-                    <a>Search Engine Optimization</a>
-                    <a>Web design & development</a>
-                    <a>Social media management</a>
-                    <a>Social media marketing</a>
-                    <a>Content writing</a>
-                    <a>video production</a>
+                    <a href="#">Services</a>
+                    <a href="#">Search Engine Optimization</a>
+                    <a href="#">Web design & development</a>
+                    <a href="#">Social media management</a>
+                    <a href="#">Social media marketing</a>
+                    <a href="#">Content writing</a>
+                    <a href="#">video production</a>
                 </div>
                 <div class="other-info">
                     <a>Company</a>
@@ -346,7 +345,6 @@
                 <div class="policy"><a>Cookie Policy</a><a>Privacy Policy</a></div>
             </section>
         </footer>
-    </main>
 </body>
 
 </html>
