@@ -96,6 +96,10 @@ a {
     color: #020e35;
 }
 
+footer section a {
+    color: #ffffff;
+}
+
 .surline {
     display: inline-block;
     background-color: #ff5678;
@@ -621,8 +625,7 @@ footer::before {
     padding: 4px;
     width: 609px;
     height: 524px;
-    left: -105px;
-    top: -27px;
+    inset: -27px auto auto -105px;
 }
 
 footer::after {
